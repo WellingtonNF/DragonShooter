@@ -17,8 +17,8 @@ class Menu:
 
         while True:
             self.window.blit(source=self.surf, dest=self.rect)  # primeiro desenha o fundo / o source é a origem, o dest é o destino da imagem
-            self.menu_text(50, 'Dragon', COLOR_ORANGE, ((WIN_WIDTH / 2), 70))
-            self.menu_text(50, 'Shooter', COLOR_ORANGE, ((WIN_WIDTH / 2), 120))
+            self.menu_text(50, 'Dragon', COLOR_WHITE, ((WIN_WIDTH / 2), 70))
+            self.menu_text(50, 'Shooter', COLOR_WHITE, ((WIN_WIDTH / 2), 120))
 
             for i in range(len(MENU_OPTION)):
                 self.menu_text(20, MENU_OPTION[i], COLOR_WHITE, ((WIN_WIDTH / 2), 200 + 25 * i))
