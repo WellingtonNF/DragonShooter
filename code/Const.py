@@ -7,14 +7,18 @@ C_YELLOW = (255, 255, 0)
 C_GREEN = (0, 128, 0)
 C_CYAN = (0, 128, 128)
 
-
 # E
 EVENT_ENEMY = pygame.USEREVENT + 1
+EVENT_TIMEOUT = pygame.USEREVENT + 2
 ENTITY_SPEED = {
-    'level1bg0': 0,
-    'level1bg1': 1,
-    'level1bg2': 1,
-    'level1bg3': 3,
+    'Level1bg0': 0,
+    'Level1bg1': 1,
+    'Level1bg2': 1,
+    'Level1bg3': 3,
+    'Level2bg0': 0,
+    'Level2bg1': 1,
+    'Level2bg2': 1,
+    'Level2bg3': 3,
     'Player1': 3,
     'Player1Shot': 2,
     'Player2': 3,
@@ -26,14 +30,14 @@ ENTITY_SPEED = {
 }
 
 ENTITY_HEALTH = {
-    'level1bg0': 999,
-    'level1bg1': 999,
-    'level1bg2': 999,
-    'level1bg3': 999,
-    # 'level2bg0': 999,
-    # 'level2bg1': 999,
-    # 'level2bg2': 999,
-    # 'level2bg3': 999,
+    'Level1bg0': 999,
+    'Level1bg1': 999,
+    'Level1bg2': 999,
+    'Level1bg3': 999,
+    'Level2bg0': 999,
+    'Level2bg1': 999,
+    'Level2bg2': 999,
+    'Level2bg3': 999,
     'Player1': 300,
     'Player1Shot': 1,
     'Player2': 300,
@@ -52,10 +56,14 @@ ENTITY_SHOT_DELAY = {
 }
 
 ENTITY_DAMAGE = {
-    'level1bg0': 0,
-    'level1bg1': 0,
-    'level1bg2': 0,
-    'level1bg3': 0,
+    'Level1bg0': 0,
+    'Level1bg1': 0,
+    'Level1bg2': 0,
+    'Level1bg3': 0,
+    'Level2bg0': 0,
+    'Level2bg1': 0,
+    'Level2bg2': 0,
+    'Level2bg3': 0,
     'Player1': 1,
     'Player1Shot': 25,
     'Player2': 1,
@@ -67,10 +75,14 @@ ENTITY_DAMAGE = {
 }
 
 ENTITY_SCORE = {
-    'level1bg0': 0,
-    'level1bg1': 0,
-    'level1bg2': 0,
-    'level1bg3': 0,
+    'Level1bg0': 0,
+    'Level1bg1': 0,
+    'Level1bg2': 0,
+    'Level1bg3': 0,
+    'Level2bg0': 0,
+    'Level2bg1': 0,
+    'Level2bg2': 0,
+    'Level2bg3': 0,
     'Player1': 0,
     'Player1Shot': 0,
     'Player2': 0,
@@ -99,7 +111,11 @@ PLAYER_KEY_RIGHT = {'Player1': pygame.K_RIGHT,
 PLAYER_KEY_SHOOT = {'Player1': pygame.K_RCTRL,
                     'Player2': pygame.K_LCTRL}
 # S
-SPAWN_TIME = 4000
+SPAWN_TIME = 2000
+
+# T
+TIMEOUT_STEP = 100  # 100ms
+TIMEOUT_LEVEL = 30000  # 30s
 
 # W
 WIN_WIDTH = 576
