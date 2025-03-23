@@ -13,13 +13,13 @@ class Menu:
 
     def run(self, ):
         menu_option = 0
-        pygame.mixer.music.load('./asset/Menu.wav')  # load music menu
+        pygame.mixer.music.load('./asset/Menu.mp3')  # load music menu
         pygame.mixer.music.play(-1)  # tocar a musica carregada, o -1 significa colocar ela em loop, tocar infinito
 
         while True:
             # DRAW IMAGES
             self.window.blit(source=self.surf, dest=self.rect)  # primeiro desenha o fundo / o source é a origem, o dest é o destino da imagem
-            self.menu_text(50, 'Dragon', C_ORANGE, ((WIN_WIDTH / 2), 70))
+            self.menu_text(50, 'Spacer', C_ORANGE, ((WIN_WIDTH / 2), 70))
             self.menu_text(50, 'Shooter', C_ORANGE, ((WIN_WIDTH / 2), 120))
 
             for i in range(len(MENU_OPTION)):
